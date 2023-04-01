@@ -1,5 +1,5 @@
 ---
-date: "2023-05-14T00:00:00Z"
+date: "2023-01-01T00:00:00Z"
 external_link: https://edgar-treischl.github.io/PracticeR/
 summary: "Many students learn to analyze data using commercial packages, even though there is an open-source software with cutting-edge possibilities: R, a programming language with countless cool features for applied empirical research. Practice R introduces R to social science students, inspiring them to consider R as an excellent choice. In a non-technical pragmatic way, this book covers all typical steps of applied empirical research. Learn how to prepare, analyze, and visualize data in R. Discover how to collect data, generate reports, or automate error-prone tasks...."
 
