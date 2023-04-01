@@ -1,0 +1,584 @@
+---
+title: "Learning SQL the Badass Way (1)"
+author: "Edgar Treischl"
+date: 2021-03-12
+diagram: FALSE
+categories: ["SQL"]
+---
+
+
+
+<p>The blog <em>learning SQL the badass way</em> shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account. What a surprise, I can read and write some SQL code even I have no idea what SQL does and I guess you can too! This blog is the result of this experience and gives a quick and dirty introduction, assuming that you have some previous coding experience and I do not have to explain why we want to wrangle data in the first place. If you do not have this impression or if you want to learn SQL in a proper way, close this blog. Go and find your way to a real SQL course or some other resources. However, if you are bored from long introduction what data is, why we need to learn how to wrangle data or other common aspects that come along the data science journey, feel free to join my SQL journey.</p>
+<p>The biggest mistake trying to learn SQL first. If you ever opened a book that introduces SQL (or any other programming language) to will find several chapters that outline you what SQL (structured query language) is. An explanation from the Wikipedia page should be sufficient: “SQL a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS)”. Thus, in a nutshell we can remember that SQL is a language to manage data (tables) in databases. The next chapters shows you how to setup the corresponding software and the database. I’ll not do that in this blog because setting up a database on your own computer does not make much sense because there are easier ways for the first steps in SQL especially if you are a R user.</p>
+<p>In case you do not have access to a SQL database: This page was built with <code>RMarkdown</code> and includes some SQL snippets with the <code>DBI</code> package. All you have to do is install the package, setup the connection and include your SQL code directly in your RMarkdown document or your R script. Thus, in our case there is no database installed, we can make use of the the local memory to simulate a database, save a table (data frame) and run SQL commands directly as a code chunk via our R script. Checkout the databases page from <a href="https://db.rstudio.com/dbi/">RStudio</a> for more information. Furthermore, I hope you are familiar with the <code>mtcars</code> and the <code>iris</code> data if you want to reproduce these first SQL steps. Both are implemented in R, but it does not matter if you not familiar with these data sets. I picked them because a lot of people know them and this blog shows you the first basic SQL commands how retrieve and work with data.</p>
+<div id="select" class="section level2">
+<h2>Select</h2>
+<ul>
+<li>Use select to retrieve a table or a column from a table</li>
+<li>You can select a single column from a table</li>
+<li>Or select the entire table (data frame) with the wildcard <code>*</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM mtcars;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 1: </span>Displaying records 1 - 10</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108.0</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">140.8</td>
+<td align="right">95</td>
+<td align="right">3.92</td>
+<td align="right">3.150</td>
+<td align="right">22.90</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">19.2</td>
+<td align="right">6</td>
+<td align="right">167.6</td>
+<td align="right">123</td>
+<td align="right">3.92</td>
+<td align="right">3.440</td>
+<td align="right">18.30</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Limit the output by providing the number of lines</li>
+</ul>
+<pre class="sql klippy"><code>SELECT mpg, disp FROM mtcars LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 2: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.0</td>
+<td align="right">160</td>
+</tr>
+<tr class="even">
+<td align="right">21.0</td>
+<td align="right">160</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">108</td>
+</tr>
+<tr class="even">
+<td align="right">21.4</td>
+<td align="right">258</td>
+</tr>
+<tr class="odd">
+<td align="right">18.7</td>
+<td align="right">360</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>You can also insert a starting point that skips some observations. For instance, <code>OFFSET 10</code> will skip the first ten table entries</li>
+<li>You must use quotations marks if the column contains special characters (like <code>'Petal.Width'</code> from iris data)</li>
+</ul>
+</div>
+<div id="where" class="section level2">
+<h2>Where</h2>
+<ul>
+<li>Define what you want to select with the <code>Where</code> option (SQL folks say clause)</li>
+<li>For instance, the variable <code>am</code> is a binary indicator (0/1) and you can use <em>where</em> to select data only if <code>am = 0</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM mtcars WHERE am = 0 LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 3: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Remember to use quotation marks if you try to use <em>where</em> with non-numerical values from: e.g. <code>!= 'label'</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM iris WHERE Species = &quot;virginica&quot;  LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 4: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6.3</td>
+<td align="right">3.3</td>
+<td align="right">6.0</td>
+<td align="right">2.5</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="even">
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">5.1</td>
+<td align="right">1.9</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="odd">
+<td align="right">7.1</td>
+<td align="right">3.0</td>
+<td align="right">5.9</td>
+<td align="right">2.1</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="even">
+<td align="right">6.3</td>
+<td align="right">2.9</td>
+<td align="right">5.6</td>
+<td align="right">1.8</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="odd">
+<td align="right">6.5</td>
+<td align="right">3.0</td>
+<td align="right">5.8</td>
+<td align="right">2.2</td>
+<td align="left">virginica</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="count" class="section level2">
+<h2>Count</h2>
+<ul>
+<li>Count counts cases!</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT(*) FROM mtcars;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 5: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT(*)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">32</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>We can count subgroups with the <code>WHERE</code> clause:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT(am) FROM mtcars WHERE am != 0;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-6">Table 6: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT(am)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="distinct" class="section level2">
+<h2>DISTINCT</h2>
+<ul>
+<li><code>Distinct</code> can be used to find distinct values. For instance, there are three different Species in the iris data, and distinct helps you to distract them:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT DISTINCT Species FROM iris</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-7">Table 7: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="left">versicolor</td>
+</tr>
+<tr class="odd">
+<td align="left">virginica</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>As in other programming languages, we can combine several commands. For instance, we can <code>COUNT</code> how many <code>Distinct</code> species the iris data has:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT (DISTINCT Species) FROM iris</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 8: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT (DISTINCT Species)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="insert-values" class="section level2">
+<h2>Insert Values</h2>
+<ul>
+<li><p>Next, I use a small data set (df) to illustrate how to <em>insert values</em>, <em>make updates</em>, and <em>delete cases</em></p></li>
+<li><p>My toy data set <code>df</code> has two observations with three variables: <code>x,y,z</code></p></li>
+<li><p>Never mind if you do not know what a <code>tribble</code> is, it is just a command to create data</p></li>
+</ul>
+<pre class="r klippy"><code>library(tidyverse)
+
+df &lt;- tribble(
+  ~x, ~y,  ~z,
+  &quot;a&quot;, 2,  3.6,
+  &quot;b&quot;, 1,  8.5
+)
+df</code></pre>
+<pre><code>## # A tibble: 2 × 3
+##   x         y     z
+##   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 a         2   3.6
+## 2 b         1   8.5</code></pre>
+<ul>
+<li>Now, we can insert new values into <code>df</code> by providing a list of the columns you want to fill in with values for each column:</li>
+</ul>
+<pre class="sql klippy"><code>INSERT INTO df (x, y, z) VALUES(&#39;c&#39;, 3, 1);</code></pre>
+<p>Let’s see whether it worked:</p>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-11">Table 9: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">b</td>
+<td align="right">1</td>
+<td align="right">8.5</td>
+</tr>
+<tr class="odd">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="updates" class="section level2">
+<h2>Updates</h2>
+<ul>
+<li>Make updates for single (or multiple) values</li>
+<li>For instance, we can update the variable z and set <code>z = 77</code> for a certain level of another variable:</li>
+</ul>
+<pre class="sql klippy"><code>UPDATE df SET z = 77 WHERE x =&#39;b&#39;;</code></pre>
+<ul>
+<li>Take care, without the <code>WHERE</code> clause all observation would get the new value!</li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-13">Table 10: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">b</td>
+<td align="right">1</td>
+<td align="right">77.0</td>
+</tr>
+<tr class="odd">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="delete" class="section level2">
+<h2>Delete</h2>
+<ul>
+<li><p>We can drop or delete observations, but of course we should take care since we probably do not want to delete the entire table, just for some implausible values</p></li>
+<li><p>For this reason we use the <code>WHERE</code> clause again, for instance, to get rid of second row of the toy data set:</p></li>
+</ul>
+<pre class="sql klippy"><code>DELETE from df WHERE x = &#39;b&#39;;</code></pre>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-15">Table 11: </span>2 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In summary, in SQL we have to select a table from the database, specify conditions with the where clause. We can use count and distinct to get a first impression of the data. Furthermore, it is all about table. Sometimes we have to insert values, a really vague concept if you are use to work with data, but from a SQL you give your database a update, you are really right in front of the data or imagine that stream of new data needs an update. If that something you have to get used to it, don’t be afraid, me too.</p>
+</div>
