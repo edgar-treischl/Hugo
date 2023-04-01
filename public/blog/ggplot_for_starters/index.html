@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.111.3">
+<title>GGplot for Starters | Dr. Edgar Treischl</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="">
+
+
+<meta property="og:site_name" content="Dr. Edgar Treischl">
+<meta property="og:title" content="GGplot for Starters | Dr. Edgar Treischl">
+<meta property="og:description" content="" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/blog/ggplot_for_starters/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/blog/ggplot_for_starters/featured.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/blog/ggplot_for_starters/featured.jpg" >
+    
+    
+  <meta itemprop="name" content="GGplot for Starters">
+<meta itemprop="description" content="I believe learning GGPlot is a good start for everyone who is not familiar with R, but who has at least some coding experience from other statistic programs. For this reason, I truly believe that learning GGPlot is smooth way to learn R ;)
+GGPlot is a powerful library that comes with many different applications to visualize data. It starts with very simple things like bar charts, box plots and line charts."><meta itemprop="datePublished" content="2018-01-12T21:13:14-05:00" />
+<meta itemprop="dateModified" content="2018-01-12T21:13:14-05:00" />
+<meta itemprop="wordCount" content="1155"><meta itemprop="image" content="/blog/ggplot_for_starters/featured.jpg">
+<meta itemprop="keywords" content="" />
+  
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.f1600bb16643a4b02b469129dec5044381045f4a0431d1b6f334f219da41e0d3.css" integrity="sha256-8WALsWZDpLArRpEp3sUEQ4EEX0oEMdG28zTyGdpB4NM=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.45dd9b11c05c7077832c20a30087c5c7b3ab7834ff0cd48b180e162ee0801c2d.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/icon.png" class="dib db-l h2 w-auto" alt="Dr. Edgar Treischl">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/publication/" title="Publications">Publications</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Snippets">Snippets</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/dataviz/" title="Visualizations">Visualizations</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">GGplot for Starters</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Edgar Treischl</p>
+        <p class="f7 db mv0 ttu">January 12, 2018</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        
+
+
+<p>I believe learning GGPlot is a good start for everyone who is not familiar with R, but who has at least some coding experience from other statistic programs. For this reason, I truly believe that learning GGPlot is smooth way to learn R ;)</p>
+<p>GGPlot is a powerful library that comes with many different applications to visualize data. It starts with very simple things like bar charts, box plots and line charts. Being more familiar with R you can use GGplot even to make maps, animations and other fancy things. We will cover that later, let’s start with some simple graphs to get you an idea how the GG universe works.</p>
+<p>As always, we need to install the package <code>install.packages("ggplot2")</code> first and load the library <code>library(ggplot2)</code>. Plus, we load two datasets included in R. So you can simply copy the code, fool around and in the end adjust for our own purposes.</p>
+<pre class="r"><code>#install.packages(&quot;XX&quot;) to install a package
+library(ggplot2)
+data(diamonds, mpg, package = &quot;ggplot2&quot;)</code></pre>
+<div id="pure-and-simple-bar-charts" class="section level2">
+<h2>Pure and simple bar charts</h2>
+<p>In the first step we produce a bar chart and adjust it step by step. Let’s say you want to visualize the outcome between two or more groups. So we can start to create a data frame in R with a variable for a group (here a treatment and control group) and some random values.</p>
+<pre class="r"><code>dat &lt;- data.frame(
+  Group = factor(c(&quot;Treatment&quot;,&quot;Control&quot;), levels=c(&quot;Treatment&quot;,&quot;Control&quot;)),
+  Outcome = c(18.89, 14.23)
+)</code></pre>
+<p>Plotting these values is pretty easy. We create a ggplot by defining our dataset (<code>data=dat</code>) and tell ggplot which are our variables of interest and the way to display it.</p>
+<pre class="r"><code># Very basic bar graph
+ggplot(data=dat, aes(x=Group, y=Outcome)) +
+    geom_bar(stat=&quot;identity&quot;)</code></pre>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>So, the basic command displays the numbers for each group since we provided a data frame with the final values. We add the layer <code>geom_bar(stat="identity")</code> to the GGplot to call these values which leaves the y value unchanged. If you instead use <code>geom_bar(stat_bin)</code> than R counts the cases, and we can even use a numerical indicator and specify a group variable <code>group=xx</code> to display the values for each group.</p>
+<p>So, this is how the basic syntax works. From here on we can adjust the plot for our purposes (and audience) by adding (+) layers.</p>
+</div>
+<div id="make-it-look-nice-and-publishable" class="section level2">
+<h2>Make it look nice and publishable</h2>
+<p>Let’s use the basic chart to learn a few options for ggplot while producing a chart you like to include in your own work without being embarrassed :) First we can use diffrent colours to indicate the differences between the groups. Ggplot automatically provides different colours by adding a third variable or instead say <code>fill=Group</code> to our basic command.</p>
+<pre class="r"><code># Very basic bar graph
+ggplot(data=dat, aes(x=Group, y=Outcome, fill=Group)) +
+  geom_bar(stat=&quot;identity&quot;)</code></pre>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>You don’t like the colours? Never mind. You can and should adjust them. For example, you can provide a graph with nice colours to highlight the differences in a presentation, but may change the colours to black and white your work. You can work that out with one line of code.</p>
+<pre class="r"><code># Very basic bar graph
+ggplot(data=dat, aes(x=Group, y=Outcome, fill=Group)) +
+  geom_bar(stat=&quot;identity&quot;)+
+  scale_fill_manual(values=c(&quot;black&quot;, &quot;gray&quot;))</code></pre>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Note that we tell ggplot “values” for the colours. This implies that R knows some standard colours, but you can provide R with the hexadecimal format for different colours, which makes it possible to use every colour. Sounds complicated in the first place, but it isn’t. Go to <a href="http://colorbrewer2.org" target="_blank">Colorbrewer</a> pick some colours you like, copy the hex code instead of providing the label for the colour.</p>
+<p>I go with some blues :).</p>
+<pre class="r"><code># Very basic bar graph
+ggplot(data=dat, aes(x=Group, y=Outcome, fill=Group)) +
+  geom_bar(stat=&quot;identity&quot;)+
+  scale_fill_manual(values=c(&quot;#08519c&quot;, &quot;#6baed6&quot;))</code></pre>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>To be honest, there is a reason why I tell you this stuff. You can find patterns of nice colours for the nature of your data (sequential, diverging) on colorbrewer, you can adjust your colours to provide colorblind safe, print friendly and photocopy safe graphs. So there are many good reasons why you should think about colours. And that’s especially true if you think about the message you like to transport with your graph. Maybe this is something to decide before we can call it a day. However, if you don’t want to choose different colours use simply <code>scale_colour_brewer()</code> to provide different already defined colour patterns (palettes). Let’s have a look.</p>
+<pre class="r"><code># Very basic bar graph
+ggplot(data=dat, aes(x=Group, y=Outcome, fill=Group)) +
+  geom_bar(stat=&quot;identity&quot;)+
+  scale_fill_brewer(palette=&quot;Set1&quot;)</code></pre>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Have a look at different defined colour patterns (Set 1,2,3; Reds, Greens), google is our friend. And the same applies for themes to define the background colours, type, size and so one. Certainly, you can define every detail as you wish, but ggplot come with nice themes you can try as a start. Just write <code>theme</code> in a newline and see which suggestions you get for different themes. Here I add the minimalist theme, but you can try different themes (theme_bw(),theme_economist()) and adjust them if necessary.</p>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Your data is probably not as clean and nice as our small world example. Maybe the variables in the data set do not even have a proper name or label. We should give our audience provide the information that is necessary to understand the graph.</p>
+<p>Labels and proper information is not a problem: Just give ggplot labels for the y and or x axis <code>ylab("Label")</code>.</p>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>#It’s up to you …</p>
+<p>There are many different options to make your graph more accessible. Certainly, I don’t believe we need to discuss all options in detail but I provide you some examples (and comments after the # in the code) for each option.</p>
+<p>So it’s up to you which information and style to add in your first ggplot. Just give it a try:</p>
+<ul>
+<li><code>#Moves (left,right, top) and Removes the legend ("none"):</code></li>
+<li><code>theme(legend.position="bottom")</code></li>
+<li><code>#If your want ajust the order:</code></li>
+<li><code>scale_fill_discrete(breaks=c("Control","Treatment"))</code></li>
+<li><code>#You can adjust the y (and x) scale by providing the min and max values:</code></li>
+<li><code>coord_cartesian(ylim = c(0, 40))</code></li>
+<li><code>#You can provide a reference line for the y (and x) variable</code></li>
+<li><code>geom_hline(aes(yintercept=20), colour="#990000", linetype="dashed")</code></li>
+<li><code>#Provide a title for your graph</code></li>
+<li><code>ggtitle("My first ggplot")</code></li>
+<li><code>#Change the orientation of the graph: Vertical vs. horizontal</code></li>
+<li><code>coord_flip()</code></li>
+</ul>
+<p>Well then, let’s practice a bit. We can use the build-in dataset mpg to make a ranked bar chart. Let’s see how the data looks:</p>
+<pre class="r"><code>#The mpg dataset
+head(mpg)</code></pre>
+<pre><code>## # A tibble: 6 × 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…</code></pre>
+<p>Can you display how many classes of cars are in the mpg dataset? Hint: <code>geom_bar(stat="count")</code></p>
+<p><img src="/blog/ggplot_for_starters/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">January 12, 2018</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">6 minute read, 1155 words</dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="/blog/pythoneer1/">&larr; The PythoneeR: But why?</a>
+  
+  
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="apreshill/apero"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2023 Edgar Treischl
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/media/CV_Treischl.pdf" title="file-pdf" >
+      <i class="fas fa-file-pdf fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/edgar-treischl" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/dr-edgar-treischl-b681791b2/?originalSubdomain=de" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com/citations?user=hOhulnUAAAAJ&amp;hl=en" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

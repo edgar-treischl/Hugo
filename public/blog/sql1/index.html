@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.111.3">
+<title>Learning SQL the Badass Way (1) | Dr. Edgar Treischl</title>
+
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="">
+
+
+<meta property="og:site_name" content="Dr. Edgar Treischl">
+<meta property="og:title" content="Learning SQL the Badass Way (1) | Dr. Edgar Treischl">
+<meta property="og:description" content="" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/blog/sql1/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/blog/sql1/featured.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/blog/sql1/featured.jpg" >
+    
+    
+  <meta itemprop="name" content="Learning SQL the Badass Way (1)">
+<meta itemprop="description" content="The blog learning SQL the badass way shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account."><meta itemprop="datePublished" content="2021-03-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-03-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1467"><meta itemprop="image" content="/blog/sql1/featured.jpg">
+<meta itemprop="keywords" content="" />
+  
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.f1600bb16643a4b02b469129dec5044381045f4a0431d1b6f334f219da41e0d3.css" integrity="sha256-8WALsWZDpLArRpEp3sUEQ4EEX0oEMdG28zTyGdpB4NM=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.45dd9b11c05c7077832c20a30087c5c7b3ab7834ff0cd48b180e162ee0801c2d.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/icon.png" class="dib db-l h2 w-auto" alt="Dr. Edgar Treischl">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/publication/" title="Publications">Publications</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Snippets">Snippets</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/dataviz/" title="Visualizations">Visualizations</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Learning SQL the Badass Way (1)</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Edgar Treischl in <a href="/categories/sql">SQL</a> </p>
+        <p class="f7 db mv0 ttu">March 12, 2021</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        
+
+
+<p>The blog <em>learning SQL the badass way</em> shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account. What a surprise, I can read and write some SQL code even I have no idea what SQL does and I guess you can too! This blog is the result of this experience and gives a quick and dirty introduction, assuming that you have some previous coding experience and I do not have to explain why we want to wrangle data in the first place. If you do not have this impression or if you want to learn SQL in a proper way, close this blog. Go and find your way to a real SQL course or some other resources. However, if you are bored from long introduction what data is, why we need to learn how to wrangle data or other common aspects that come along the data science journey, feel free to join my SQL journey.</p>
+<p>The biggest mistake trying to learn SQL first. If you ever opened a book that introduces SQL (or any other programming language) to will find several chapters that outline you what SQL (structured query language) is. An explanation from the Wikipedia page should be sufficient: “SQL a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS)”. Thus, in a nutshell we can remember that SQL is a language to manage data (tables) in databases. The next chapters shows you how to setup the corresponding software and the database. I’ll not do that in this blog because setting up a database on your own computer does not make much sense because there are easier ways for the first steps in SQL especially if you are a R user.</p>
+<p>In case you do not have access to a SQL database: This page was built with <code>RMarkdown</code> and includes some SQL snippets with the <code>DBI</code> package. All you have to do is install the package, setup the connection and include your SQL code directly in your RMarkdown document or your R script. Thus, in our case there is no database installed, we can make use of the the local memory to simulate a database, save a table (data frame) and run SQL commands directly as a code chunk via our R script. Checkout the databases page from <a href="https://db.rstudio.com/dbi/">RStudio</a> for more information. Furthermore, I hope you are familiar with the <code>mtcars</code> and the <code>iris</code> data if you want to reproduce these first SQL steps. Both are implemented in R, but it does not matter if you not familiar with these data sets. I picked them because a lot of people know them and this blog shows you the first basic SQL commands how retrieve and work with data.</p>
+<div id="select" class="section level2">
+<h2>Select</h2>
+<ul>
+<li>Use select to retrieve a table or a column from a table</li>
+<li>You can select a single column from a table</li>
+<li>Or select the entire table (data frame) with the wildcard <code>*</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM mtcars;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-1">Table 1: </span>Displaying records 1 - 10</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108.0</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">140.8</td>
+<td align="right">95</td>
+<td align="right">3.92</td>
+<td align="right">3.150</td>
+<td align="right">22.90</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">19.2</td>
+<td align="right">6</td>
+<td align="right">167.6</td>
+<td align="right">123</td>
+<td align="right">3.92</td>
+<td align="right">3.440</td>
+<td align="right">18.30</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Limit the output by providing the number of lines</li>
+</ul>
+<pre class="sql klippy"><code>SELECT mpg, disp FROM mtcars LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-2">Table 2: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.0</td>
+<td align="right">160</td>
+</tr>
+<tr class="even">
+<td align="right">21.0</td>
+<td align="right">160</td>
+</tr>
+<tr class="odd">
+<td align="right">22.8</td>
+<td align="right">108</td>
+</tr>
+<tr class="even">
+<td align="right">21.4</td>
+<td align="right">258</td>
+</tr>
+<tr class="odd">
+<td align="right">18.7</td>
+<td align="right">360</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>You can also insert a starting point that skips some observations. For instance, <code>OFFSET 10</code> will skip the first ten table entries</li>
+<li>You must use quotations marks if the column contains special characters (like <code>'Petal.Width'</code> from iris data)</li>
+</ul>
+</div>
+<div id="where" class="section level2">
+<h2>Where</h2>
+<ul>
+<li>Define what you want to select with the <code>Where</code> option (SQL folks say clause)</li>
+<li>For instance, the variable <code>am</code> is a binary indicator (0/1) and you can use <em>where</em> to select data only if <code>am = 0</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM mtcars WHERE am = 0 LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 3: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>Remember to use quotation marks if you try to use <em>where</em> with non-numerical values from: e.g. <code>!= 'label'</code></li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM iris WHERE Species = &quot;virginica&quot;  LIMIT 5;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 4: </span>5 records</caption>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6.3</td>
+<td align="right">3.3</td>
+<td align="right">6.0</td>
+<td align="right">2.5</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="even">
+<td align="right">5.8</td>
+<td align="right">2.7</td>
+<td align="right">5.1</td>
+<td align="right">1.9</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="odd">
+<td align="right">7.1</td>
+<td align="right">3.0</td>
+<td align="right">5.9</td>
+<td align="right">2.1</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="even">
+<td align="right">6.3</td>
+<td align="right">2.9</td>
+<td align="right">5.6</td>
+<td align="right">1.8</td>
+<td align="left">virginica</td>
+</tr>
+<tr class="odd">
+<td align="right">6.5</td>
+<td align="right">3.0</td>
+<td align="right">5.8</td>
+<td align="right">2.2</td>
+<td align="left">virginica</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="count" class="section level2">
+<h2>Count</h2>
+<ul>
+<li>Count counts cases!</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT(*) FROM mtcars;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 5: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT(*)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">32</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>We can count subgroups with the <code>WHERE</code> clause:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT(am) FROM mtcars WHERE am != 0;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-6">Table 6: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT(am)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="distinct" class="section level2">
+<h2>DISTINCT</h2>
+<ul>
+<li><code>Distinct</code> can be used to find distinct values. For instance, there are three different Species in the iris data, and distinct helps you to distract them:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT DISTINCT Species FROM iris</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-7">Table 7: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="left">versicolor</td>
+</tr>
+<tr class="odd">
+<td align="left">virginica</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>As in other programming languages, we can combine several commands. For instance, we can <code>COUNT</code> how many <code>Distinct</code> species the iris data has:</li>
+</ul>
+<pre class="sql klippy"><code>SELECT COUNT (DISTINCT Species) FROM iris</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 8: </span>1 records</caption>
+<thead>
+<tr class="header">
+<th align="right">COUNT (DISTINCT Species)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="insert-values" class="section level2">
+<h2>Insert Values</h2>
+<ul>
+<li><p>Next, I use a small data set (df) to illustrate how to <em>insert values</em>, <em>make updates</em>, and <em>delete cases</em></p></li>
+<li><p>My toy data set <code>df</code> has two observations with three variables: <code>x,y,z</code></p></li>
+<li><p>Never mind if you do not know what a <code>tribble</code> is, it is just a command to create data</p></li>
+</ul>
+<pre class="r klippy"><code>library(tidyverse)
+
+df &lt;- tribble(
+  ~x, ~y,  ~z,
+  &quot;a&quot;, 2,  3.6,
+  &quot;b&quot;, 1,  8.5
+)
+df</code></pre>
+<pre><code>## # A tibble: 2 × 3
+##   x         y     z
+##   &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 a         2   3.6
+## 2 b         1   8.5</code></pre>
+<ul>
+<li>Now, we can insert new values into <code>df</code> by providing a list of the columns you want to fill in with values for each column:</li>
+</ul>
+<pre class="sql klippy"><code>INSERT INTO df (x, y, z) VALUES(&#39;c&#39;, 3, 1);</code></pre>
+<p>Let’s see whether it worked:</p>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-11">Table 9: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">b</td>
+<td align="right">1</td>
+<td align="right">8.5</td>
+</tr>
+<tr class="odd">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="updates" class="section level2">
+<h2>Updates</h2>
+<ul>
+<li>Make updates for single (or multiple) values</li>
+<li>For instance, we can update the variable z and set <code>z = 77</code> for a certain level of another variable:</li>
+</ul>
+<pre class="sql klippy"><code>UPDATE df SET z = 77 WHERE x =&#39;b&#39;;</code></pre>
+<ul>
+<li>Take care, without the <code>WHERE</code> clause all observation would get the new value!</li>
+</ul>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-13">Table 10: </span>3 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">b</td>
+<td align="right">1</td>
+<td align="right">77.0</td>
+</tr>
+<tr class="odd">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="delete" class="section level2">
+<h2>Delete</h2>
+<ul>
+<li><p>We can drop or delete observations, but of course we should take care since we probably do not want to delete the entire table, just for some implausible values</p></li>
+<li><p>For this reason we use the <code>WHERE</code> clause again, for instance, to get rid of second row of the toy data set:</p></li>
+</ul>
+<pre class="sql klippy"><code>DELETE from df WHERE x = &#39;b&#39;;</code></pre>
+<pre class="sql klippy"><code>SELECT * FROM df;</code></pre>
+<div class="knitsql-table">
+<table>
+<caption><span id="tab:unnamed-chunk-15">Table 11: </span>2 records</caption>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+<th align="right">y</th>
+<th align="right">z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">a</td>
+<td align="right">2</td>
+<td align="right">3.6</td>
+</tr>
+<tr class="even">
+<td align="left">c</td>
+<td align="right">3</td>
+<td align="right">1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In summary, in SQL we have to select a table from the database, specify conditions with the where clause. We can use count and distinct to get a first impression of the data. Furthermore, it is all about table. Sometimes we have to insert values, a really vague concept if you are use to work with data, but from a SQL you give your database a update, you are really right in front of the data or imagine that stream of new data needs an update. If that something you have to get used to it, don’t be afraid, me too.</p>
+</div>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">March 12, 2021</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">7 minute read, 1467 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="/categories/sql">SQL</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="/blog/sql2/">&larr; Learning SQL the Badass Way II</a>
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="/blog/pythoneer1/">The PythoneeR: But why? &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="apreshill/apero"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2023 Edgar Treischl
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/media/CV_Treischl.pdf" title="file-pdf" >
+      <i class="fas fa-file-pdf fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/edgar-treischl" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/dr-edgar-treischl-b681791b2/?originalSubdomain=de" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com/citations?user=hOhulnUAAAAJ&amp;hl=en" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

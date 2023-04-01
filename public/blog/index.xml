@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dr. Edgar Treischl</title>
+    <link>/blog/</link>
+    <description>Recent content on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning SQL the Badass Way III</title>
+      <link>/blog/sql3/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql3/</guid>
+      <description>Do you really want to “learn SQL the badass way”? I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+    </item>
+    
+    <item>
+      <title>Create, scan, and correct exams with R</title>
+      <link>/blog/examr/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/examr/</guid>
+      <description>Create, scan, and correct exams with R As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don’t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user.</description>
+    </item>
+    
+    <item>
+      <title>Learning SQL the Badass Way II</title>
+      <link>/blog/sql2/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql2/</guid>
+      <description>Some vocabulary This is the second blog post from “Learn SQL the badass way”. I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+    </item>
+    
+    <item>
+      <title>Learning SQL the Badass Way (1)</title>
+      <link>/blog/sql1/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql1/</guid>
+      <description>The blog learning SQL the badass way shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account.</description>
+    </item>
+    
+    <item>
+      <title>The PythoneeR: But why?</title>
+      <link>/blog/pythoneer1/</link>
+      <pubDate>Fri, 14 Aug 2020 21:13:14 -0500</pubDate>
+      
+      <guid>/blog/pythoneer1/</guid>
+      <description>I tried to learn Python several times. Once I had a very peculiar class in which we should learn Python for processing natural language. Well, it was more about text mining than applying Python. I tried to learn Python with the help of several books which introduced and ins and out of Python. Before I started to learn Python, I fluently spoke several other statistics software like R, Stata, and please forgive me, my personal journey started with SPSS.</description>
+    </item>
+    
+    <item>
+      <title>GGplot for Starters</title>
+      <link>/blog/ggplot_for_starters/</link>
+      <pubDate>Fri, 12 Jan 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/blog/ggplot_for_starters/</guid>
+      <description>I believe learning GGPlot is a good start for everyone who is not familiar with R, but who has at least some coding experience from other statistic programs. For this reason, I truly believe that learning GGPlot is smooth way to learn R ;)
+GGPlot is a powerful library that comes with many different applications to visualize data. It starts with very simple things like bar charts, box plots and line charts.</description>
+    </item>
+    
+  </channel>
+</rss>

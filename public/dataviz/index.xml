@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization portfolio on Dr. Edgar Treischl</title>
+    <link>/dataviz/</link>
+    <description>Recent content in Visualization portfolio on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gapminder bubble chart</title>
+      <link>/dataviz/gapminder/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/gapminder/</guid>
+      <description>A remake of the famous Gapminder bubble charts.</description>
+    </item>
+    
+    <item>
+      <title>Humor</title>
+      <link>/dataviz/humor/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/humor/</guid>
+      <description>Visualizations with Humor</description>
+    </item>
+    
+    <item>
+      <title>Illustrations</title>
+      <link>/dataviz/illustrations/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/illustrations/</guid>
+      <description>Visualizations to illustrate concepts.</description>
+    </item>
+    
+    <item>
+      <title>Streetmap</title>
+      <link>/dataviz/streetmaps/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/streetmaps/</guid>
+      <description>A streetmap that visualizes Cologne.</description>
+    </item>
+    
+    <item>
+      <title>Visualizations for Practice R</title>
+      <link>/dataviz/practicer/</link>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/practicer/</guid>
+      <description>Practice R includes a lot of graphs and illustrations &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Visualizations for Impact Evaluation</title>
+      <link>/dataviz/wirkungsevaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/wirkungsevaluation/</guid>
+      <description>I created several visualizations for the book about &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
