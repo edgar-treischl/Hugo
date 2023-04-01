@@ -1,6 +1,6 @@
 ---
-date: "2022-11-01T00:00:00Z"
-summary: "The apps shows user with little statistical background the main idea of a linear regression analysis. User can pick ..."
+date: "2020-11-01T00:00:00Z"
+summary: "The app shows user with little statistical background the main idea of a linear regression analysis. User can pick ..."
 links:
 - icon: door-open
   icon_pack: fas

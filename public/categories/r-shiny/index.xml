@@ -6,14 +6,14 @@
     <description>Recent content in R Shiny on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r-shiny/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r-shiny/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Regression App</title>
       <link>/project/olsapp/</link>
-      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>/project/olsapp/</guid>
-      <description>The apps shows user with little statistical background the main idea of a linear regression analysis. User can pick &amp;hellip;</description>
+      <description>The app shows user with little statistical background the main idea of a linear regression analysis. User can pick &amp;hellip;</description>
     </item>
     
     <item>

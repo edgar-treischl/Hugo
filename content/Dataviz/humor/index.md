@@ -1,7 +1,7 @@
 ---
 date: "2021-10-14T00:00:00Z"
 external_link: https://edgar-treischl.github.io/PracticeR/
-summary: "Visualizations with Humor"
+summary: "Visualizations for a twinkle in the eye."
 
 
 links:

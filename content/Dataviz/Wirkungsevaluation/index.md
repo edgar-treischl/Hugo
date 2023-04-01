@@ -15,9 +15,12 @@ links:
   url: https://www.beltz.de/fachmedien/soziologie/produkte/details/42792-wirkungsevaluation.html
 ---
 
-![Worldmap](featured.png)
 
-Evaluationen werden häufig durchgeführt, um die kausalen Wirkungen einer Maßnahme zu identifizieren. Das Lehrbuch führt in die entsprechenden theoretischen und methodischen Grundlagen der Wirkungsevaluation ein und illustriert diese anhand ausgewählter Beispiele. Ziel des Buches ist es dabei, einen praktischen Bezug zum Ablauf einer Evaluation und den einzelnen Entscheidungsschritten herzustellen, aber auch mögliche Fallstricke unterschiedlicher Evaluationsverfahren aufzuzeigen. Eine Lektüre ist daher sowohl für Evaluationsforschende als auch für Stakeholder wie Auftraggebende, Evaluierte und Entscheidungsträger ertragreich.
+The textbook introduces the relevant theoretical and methodological principles of *effect evaluation* and illustrates them with selected examples. As the next illustration shows, the proportion of the population with overweight (and obesity) is high worldwide. For this reason, we examined the question of what extent food labeling measures can counteract this trend.
+
+
+![Worldmap](featured2.png)
+
 
 From:
 

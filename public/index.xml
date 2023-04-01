@@ -96,15 +96,6 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
-      <title>Linear Regression App</title>
-      <link>/project/olsapp/</link>
-      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/project/olsapp/</guid>
-      <description>The apps shows user with little statistical background the main idea of a linear regression analysis. User can pick &amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>The Past, Present and Future of Factorial Survey Experiments</title>
       <link>/publication/treischl_wolbring_2021/</link>
       <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
@@ -128,7 +119,7 @@ My content section is: collection My layout is: single-series part 2! does this 
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>/dataviz/humor/</guid>
-      <description>Visualizations with Humor</description>
+      <description>Visualizations for a twinkle in the eye.</description>
     </item>
     
     <item>
@@ -210,6 +201,15 @@ My content section is: collection My layout is: single-series part 2! does this 
       
       <guid>/publication/sch%C3%B6mer_etal_2021/</guid>
       <description>The use of machine learning found its way into the field of educational research and address the necessity of data-driven student advisory. Notwithstanding the plethora of current research that predicts and quantifies aspects of students&amp;rsquo; academic success in various situations during a student&amp;rsquo;s course of study, most studies focus on the technical aspects and overlook potential of direct discrimination. In addressing this gap, &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression App</title>
+      <link>/project/olsapp/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/olsapp/</guid>
+      <description>The app shows user with little statistical background the main idea of a linear regression analysis. User can pick &amp;hellip;</description>
     </item>
     
     <item>
