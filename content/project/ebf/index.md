@@ -9,7 +9,7 @@ links:
 - icon: link
   icon_pack: fas
   name: Website
-  url: https://ebf-obdxt.ondigitalocean.app/
+  url: https://edgar-treischl.github.io/EBF/
 - icon: github
   icon_pack: fab
   name: github

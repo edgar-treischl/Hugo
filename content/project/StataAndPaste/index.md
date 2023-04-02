@@ -7,7 +7,7 @@ links:
 - icon: link
   icon_pack: fas
   name: Website
-  url: https://stata-and-paste-q7kgs.ondigitalocean.app/index.html
+  url: https://edgar-treischl.github.io/Stata-and-Paste/
 - icon: book
   icon_pack: fas
   name: pdf
