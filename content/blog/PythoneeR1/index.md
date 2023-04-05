@@ -1,7 +1,7 @@
 ---
-title: "The PythoneeR: But why?"
+title: "The PythoneeR: Intro"
 author: "Edgar Treischl"
-date: 2020-08-14T21:13:14-05:00
+date: 2021-03-21
 diagram: FALSE
 categories: ["Python"]
 ---

@@ -13,7 +13,7 @@
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/sql3/</guid>
-      <description>Do you really want to “learn SQL the badass way”? I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+      <description>Do you really want to &amp;ldquo;learn SQL the badass way&amp;rdquo;? I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/examr/</guid>
-      <description>Create, scan, and correct exams with R As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don’t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user.</description>
+      <description>Create, scan, and correct exams with R As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don&amp;rsquo;t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user.</description>
     </item>
     
     <item>
@@ -31,25 +31,25 @@
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/sql2/</guid>
-      <description>Some vocabulary This is the second blog post from “Learn SQL the badass way”. I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+      <description>Some vocabulary This is the second blog post from &amp;ldquo;Learn SQL the badass way&amp;rdquo;. I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+    </item>
+    
+    <item>
+      <title>The PythoneeR: Intro</title>
+      <link>/blog/pythoneer1/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/pythoneer1/</guid>
+      <description>I tried to learn Python several times. Once I had a very peculiar class in which we should learn Python for processing natural language. Well, it was more about text mining than applying Python. I tried to learn Python with the help of several books which introduced and ins and out of Python. Before I started to learn Python, I fluently spoke several other statistics software like R, Stata, and please forgive me, my personal journey started with SPSS.</description>
     </item>
     
     <item>
       <title>Learning SQL the Badass Way (1)</title>
       <link>/blog/sql1/</link>
-      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/sql1/</guid>
       <description>The blog learning SQL the badass way shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account.</description>
-    </item>
-    
-    <item>
-      <title>The PythoneeR: But why?</title>
-      <link>/blog/pythoneer1/</link>
-      <pubDate>Fri, 14 Aug 2020 21:13:14 -0500</pubDate>
-      
-      <guid>/blog/pythoneer1/</guid>
-      <description>I tried to learn Python several times. Once I had a very peculiar class in which we should learn Python for processing natural language. Well, it was more about text mining than applying Python. I tried to learn Python with the help of several books which introduced and ins and out of Python. Before I started to learn Python, I fluently spoke several other statistics software like R, Stata, and please forgive me, my personal journey started with SPSS.</description>
     </item>
     
     <item>

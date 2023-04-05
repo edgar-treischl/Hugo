@@ -95,8 +95,11 @@
     <loc>/blog/sql2/</loc>
     <lastmod>2021-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/sql1/</loc>
-    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+    <loc>/categories/python/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/pythoneer1/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/sch%C3%B6mer_etal_2021/</loc>
     <lastmod>2021-03-03T00:00:00+00:00</lastmod>
@@ -122,17 +125,14 @@
     <loc>/project/statameetsr/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/python/</loc>
-    <lastmod>2020-08-14T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/blog/pythoneer1/</loc>
-    <lastmod>2020-08-14T21:13:14-05:00</lastmod>
-  </url><url>
     <loc>/publication/2021_treischl_etal/</loc>
     <lastmod>2020-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/wirkungsevaluation/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/sql1/</loc>
+    <lastmod>2020-03-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/tutzing/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>

@@ -24,5 +24,5 @@ Practice R includes a lot of graphs and illustrations.
 
 Cite this book:
 
-Treischl, E. (2022): Practice R. Berlin/Boston: De Gruyter Oldenbourg.
+Treischl, E. (2023): Practice R. Berlin/Boston: De Gruyter Oldenbourg.
 

@@ -27,5 +27,5 @@ Practice R has social science students in mind, nonetheless a broader audience m
 
 Cite this book:
 
-Treischl, E. (2022): Practice R. Berlin/Boston: De Gruyter Oldenbourg.
+Treischl, E. (2023): Practice R. Berlin/Boston: De Gruyter Oldenbourg.
 

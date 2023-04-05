@@ -1,7 +1,7 @@
 ---
 title: "Learning SQL the Badass Way (1)"
 author: "Edgar Treischl"
-date: 2021-03-12
+date: 2020-03-12
 diagram: FALSE
 categories: ["SQL"]
 ---
