@@ -8,7 +8,7 @@ links:
   url: http://rstudio.edgar-treischl.de/shiny/power/
 
 title: Power App
-categories: ["R Shiny"]
+categories: ["R Shiny", "R"]
 ---
 
 

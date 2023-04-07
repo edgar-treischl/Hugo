@@ -18,9 +18,7 @@ links:
   name: GitHub
   url: https://github.com/edgar-treischl/CopyCat
 
-tags:
-- R
-- R Package
+categories: ["R"]
 ---
 
 CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with code snippets (minimal examples) that run with implemented data. CopyCat was built as a personal package for the lazy cats, but it may help (new) R users to manage code snippets. It has a graphical interface (RStudio addin), so pick a function and press the insert code button. RStudio inserts the code for you.
