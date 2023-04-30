@@ -17,4 +17,5 @@ categories: ["Python"]
 	src="https://gradio.s3-us-west-2.amazonaws.com/3.28.0/gradio.js"
 ></script>
 
-<gradio-app src="https://edgar-treischl-test.hf.space"></gradio-app>
+<gradio-app src="https://edgar-treischl-edgargtp.hf.space"></gradio-app>
+
