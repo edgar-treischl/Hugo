@@ -87,13 +87,17 @@ enableEmoji = true
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
   #<i class="fa-solid fa-file-user"></i>
   [[params.social]]
-      icon      = "file-pdf" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "../media/CV_Treischl.pdf"
-  [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://github.com/edgar-treischl"
+  [[params.social]]
+      icon      = "robot" # icon name without the 'fa-'
+      icon_pack = "fa"
+      url       = "../project/edgar/"
+  [[params.social]]
+      icon      = "file-pdf" # icon name without the 'fa-'
+      icon_pack = "fas"
+      url       = "../media/CV_Treischl.pdf"
   [[params.social]]
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"

@@ -177,6 +177,15 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
+      <title>EdgarGTP</title>
+      <link>/project/edgar/</link>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/project/edgar/</guid>
+      <description>Ask EdgarGTP a question. He knows some facts about me based on my website, my CV, and other projects.</description>
+    </item>
+    
+    <item>
       <title>Empirical educational research</title>
       <link>/project/ebf/</link>
       <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>

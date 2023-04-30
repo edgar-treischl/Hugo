@@ -7,10 +7,10 @@ show_social_links: true # specify social accounts in site config
 audio_link_label: "" # leave blank to exclude
 link_list_label: "Interests" # bookmarks, elsewhere, etc.
 link_list:
-- name: R
+- name: Practice R
   url: https://edgar-treischl.github.io/PracticeR/
-- name: Bildungsforschung
-  url: https://edgar-treischl.github.io/EBF/
+- name: Ask EdgarGTP
+  url: https://edgar-treischl.de/project/edgar/
 - name: Evaluation
   url: https://edgar-treischl.de/publication/wirkungsevaluation/
 ---

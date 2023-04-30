@@ -1,3 +1,4 @@
+
 ---
 ## Configure page content in wide column
 title: "" # leave blank to exclude
@@ -13,10 +14,11 @@ intro: |
   Before I went to Nuremberg, I worked as research assistant at the Chair Statistics and Methodology (Frauke Kreuter and Florian Keusch) and as project team member (Tobias Wolbring) at the Mannheim Centre for European Social Research (MZES).
   
 
-  <i class="fas fa-file-pdf"></i> Download my [CV](../media/CV_Treischl.pdf) for more information
+  <i class="fas fa-file-pdf"></i> Download my [CV](../media/CV_Treischl.pdf) for more information.
   
 
 ---
 
 ** index doesn't contain a body, just front matter above.
 See about/list.html in the layouts folder **
+
