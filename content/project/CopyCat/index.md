@@ -6,7 +6,7 @@ image:
   caption: ''
   focal_point: Smart
 summary: "CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with ..."
-date: "2023-01-01"
+date: "2023-05-05"
 
 links:
 - icon: link

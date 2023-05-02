@@ -1,12 +1,12 @@
 ---
-title: EdgarGTP
+title: EdgarGPT
 image:
   caption: ''
   focal_point: Smart
 
-summary: "Ask EdgarGTP a question. He knows some facts about me based on my website, my CV, and other projects."
+summary: "Ask EdgarGPT a question. The AI chat bot is supposed to know facts about me based on my website, my CV, and other projects."
 
-date: "2021-06-11T00:00:00Z"
+date: "2023-01-01"
 
 
 categories: ["Python"]
