@@ -6,7 +6,7 @@
     <description>Recent content in Edgar J. Treischl on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Netlify</title>
       <link>/collection/day02/01-netlify/</link>
@@ -89,10 +89,19 @@ My content section is: collection My layout is: single-series part 2! does this 
     <item>
       <title>CopyCat</title>
       <link>/project/copycat/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
       <guid>/project/copycat/</guid>
       <description>CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>EdgarGPT</title>
+      <link>/project/edgar/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/project/edgar/</guid>
+      <description>Ask EdgarGPT a question. The AI chat bot is trained to know facts about me based on this website, my CV, and other project materials.</description>
     </item>
     
     <item>
@@ -174,15 +183,6 @@ My content section is: collection My layout is: single-series part 2! does this 
       
       <guid>/blog/examr/</guid>
       <description>Create, scan, and correct exams with R As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don&amp;rsquo;t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user.</description>
-    </item>
-    
-    <item>
-      <title>EdgarGTP</title>
-      <link>/project/edgar/</link>
-      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/project/edgar/</guid>
-      <description>Ask EdgarGTP a question. He knows some facts about me based on my website, my CV, and other projects.</description>
     </item>
     
     <item>

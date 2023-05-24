@@ -6,23 +6,23 @@
     <description>Recent content in Project Portfolio on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CopyCat</title>
       <link>/project/copycat/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
       <guid>/project/copycat/</guid>
       <description>CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with &amp;hellip;</description>
     </item>
     
     <item>
-      <title>EdgarGTP</title>
+      <title>EdgarGPT</title>
       <link>/project/edgar/</link>
-      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>/project/edgar/</guid>
-      <description>Ask EdgarGTP a question. He knows some facts about me based on my website, my CV, and other projects.</description>
+      <description>Ask EdgarGPT a question. The AI chat bot is trained to know facts about me based on this website, my CV, and other project materials.</description>
     </item>
     
     <item>

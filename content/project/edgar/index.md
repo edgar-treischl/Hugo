@@ -4,7 +4,7 @@ image:
   caption: ''
   focal_point: Smart
 
-summary: "Ask EdgarGPT a question. The AI chat bot is supposed to know facts about me based on my website, my CV, and other projects."
+summary: "Ask EdgarGPT a question. The AI chat bot is trained to know facts about me based on this website, my CV, and other project materials."
 
 date: "2023-01-01"
 
