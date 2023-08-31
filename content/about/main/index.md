@@ -14,7 +14,7 @@ intro: |
   Before I went to Nuremberg, I worked as research assistant at the Chair Statistics and Methodology (Frauke Kreuter and Florian Keusch) and as project team member (Tobias Wolbring) at the Mannheim Centre for European Social Research (MZES).
   
 
-  <i class="fas fa-file-pdf"></i> Download my [CV](../media/CV_Treischl.pdf) for more information.
+  <i class="fas fa-file-pdf"></i> Inspect my [CV](../media/CV_Treischl.pdf) for more information.
   
 
 ---

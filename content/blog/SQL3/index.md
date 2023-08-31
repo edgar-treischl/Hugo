@@ -26,7 +26,7 @@ SELECT * FROM df ;
 <div class="knitsql-table">
 
 
-Table: Table 1: 4 records
+Table: <span id="tab:unnamed-chunk-1"></span>Table 1: 4 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -51,7 +51,7 @@ SELECT * FROM df WHERE country LIKE 'A%';
 <div class="knitsql-table">
 
 
-Table: Table 2: 1 records
+Table: <span id="tab:unnamed-chunk-2"></span>Table 2: 1 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -75,7 +75,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 <div class="knitsql-table">
 
 
-Table: Table 3: 5 records
+Table: <span id="tab:unnamed-chunk-3"></span>Table 3: 5 records
 
 |  mpg| cyl|  disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |----:|---:|-----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
@@ -99,7 +99,7 @@ SELECT * FROM df WHERE country IN ('Brazil');
 <div class="knitsql-table">
 
 
-Table: Table 4: 2 records
+Table: <span id="tab:unnamed-chunk-4"></span>Table 4: 2 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -123,7 +123,7 @@ SELECT * FROM df ORDER BY country;
 <div class="knitsql-table">
 
 
-Table: Table 5: 4 records
+Table: <span id="tab:unnamed-chunk-5"></span>Table 5: 4 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -146,7 +146,7 @@ SELECT * FROM df ORDER BY country DESC;
 <div class="knitsql-table">
 
 
-Table: Table 6: 4 records
+Table: <span id="tab:unnamed-chunk-6"></span>Table 6: 4 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -168,7 +168,7 @@ SELECT * FROM df ORDER BY y;
 <div class="knitsql-table">
 
 
-Table: Table 7: 4 records
+Table: <span id="tab:unnamed-chunk-7"></span>Table 7: 4 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -193,7 +193,7 @@ SELECT distinct(country) FROM df ;
 <div class="knitsql-table">
 
 
-Table: Table 8: 3 records
+Table: <span id="tab:unnamed-chunk-8"></span>Table 8: 3 records
 
 |country |
 |:-------|
@@ -215,7 +215,7 @@ SELECT country, count (country) from df group by country;
 <div class="knitsql-table">
 
 
-Table: Table 9: 3 records
+Table: <span id="tab:unnamed-chunk-9"></span>Table 9: 3 records
 
 |country | count (country)|
 |:-------|---------------:|
@@ -237,7 +237,7 @@ SELECT country, count (country) AS Count_Variable from df group by country;
 <div class="knitsql-table">
 
 
-Table: Table 10: 3 records
+Table: <span id="tab:unnamed-chunk-10"></span>Table 10: 3 records
 
 |country | Count_Variable|
 |:-------|--------------:|
@@ -258,7 +258,7 @@ SELECT country, AVG(z) as Mean from df group by country;
 <div class="knitsql-table">
 
 
-Table: Table 11: 3 records
+Table: <span id="tab:unnamed-chunk-11"></span>Table 11: 3 records
 
 |country | Mean|
 |:-------|----:|
@@ -280,7 +280,7 @@ SELECT country, count (country) AS Count from df group by country having count (
 <div class="knitsql-table">
 
 
-Table: Table 12: 1 records
+Table: <span id="tab:unnamed-chunk-12"></span>Table 12: 1 records
 
 |country | Count|
 |:-------|-----:|
@@ -314,7 +314,7 @@ select sum(mpg) as sum_mpg from mtcars where hp > 100
 <div class="knitsql-table">
 
 
-Table: Table 13: 1 records
+Table: <span id="tab:unnamed-chunk-13"></span>Table 13: 1 records
 
 | sum_mpg|
 |-------:|
@@ -333,7 +333,7 @@ select round(drat, 1) as round_drat from mtcars
 <div class="knitsql-table">
 
 
-Table: Table 14: Displaying records 1 - 10
+Table: <span id="tab:unnamed-chunk-14"></span>Table 14: Displaying records 1 - 10
 
 | round_drat|
 |----------:|
@@ -362,7 +362,7 @@ select length(country) from df
 <div class="knitsql-table">
 
 
-Table: Table 15: 4 records
+Table: <span id="tab:unnamed-chunk-15"></span>Table 15: 4 records
 
 | length(country)|
 |---------------:|
@@ -385,7 +385,7 @@ select upper(country) from df
 <div class="knitsql-table">
 
 
-Table: Table 16: 4 records
+Table: <span id="tab:unnamed-chunk-16"></span>Table 16: 4 records
 
 |upper(country) |
 |:--------------|
@@ -430,7 +430,7 @@ select avg(mpg) from mtcars
 <div class="knitsql-table">
 
 
-Table: Table 17: 1 records
+Table: <span id="tab:unnamed-chunk-18"></span>Table 17: 1 records
 
 | avg(mpg)|
 |--------:|
@@ -457,7 +457,7 @@ select * from mtcars where mpg >
 <div class="knitsql-table">
 
 
-Table: Table 18: Displaying records 1 - 10
+Table: <span id="tab:unnamed-chunk-20"></span>Table 18: Displaying records 1 - 10
 
 |  mpg| cyl|  disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |----:|---:|-----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
@@ -485,7 +485,7 @@ select country, z from df
 <div class="knitsql-table">
 
 
-Table: Table 19: 4 records
+Table: <span id="tab:unnamed-chunk-21"></span>Table 19: 4 records
 
 |country |   z|
 |:-------|---:|
@@ -507,7 +507,7 @@ select country, z, avg(z) as avg_Z from df
 <div class="knitsql-table">
 
 
-Table: Table 20: 1 records
+Table: <span id="tab:unnamed-chunk-22"></span>Table 20: 1 records
 
 |country |   z| avg_Z|
 |:-------|---:|-----:|
@@ -526,7 +526,7 @@ select country, z, (select avg(z) from df group by country) as avg_Z from df
 <div class="knitsql-table">
 
 
-Table: Table 21: 4 records
+Table: <span id="tab:unnamed-chunk-23"></span>Table 21: 4 records
 
 |country |   z| avg_Z|
 |:-------|---:|-----:|
@@ -548,7 +548,7 @@ select * from (select hp, vs from mtcars);
 <div class="knitsql-table">
 
 
-Table: Table 22: Displaying records 1 - 10
+Table: <span id="tab:unnamed-chunk-24"></span>Table 22: Displaying records 1 - 10
 
 |  hp| vs|
 |---:|--:|
@@ -579,7 +579,7 @@ select * from df2;
 <div class="knitsql-table">
 
 
-Table: Table 23: 2 records
+Table: <span id="tab:unnamed-chunk-25"></span>Table 23: 2 records
 
 |country | valid| id|
 |:-------|-----:|--:|
@@ -601,7 +601,7 @@ select * from df
 <div class="knitsql-table">
 
 
-Table: Table 24: 2 records
+Table: <span id="tab:unnamed-chunk-26"></span>Table 24: 2 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -623,7 +623,7 @@ select * from df
 <div class="knitsql-table">
 
 
-Table: Table 25: 1 records
+Table: <span id="tab:unnamed-chunk-27"></span>Table 25: 1 records
 
 |country |  y|   z| id|
 |:-------|--:|---:|--:|
@@ -642,7 +642,7 @@ select * from df, df2
 <div class="knitsql-table">
 
 
-Table: Table 26: 8 records
+Table: <span id="tab:unnamed-chunk-28"></span>Table 26: 8 records
 
 |country |  y|   z| id|country | valid| id|
 |:-------|--:|---:|--:|:-------|-----:|--:|

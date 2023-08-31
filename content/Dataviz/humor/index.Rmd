@@ -1,0 +1,35 @@
+---
+title: "Humor"
+author: "Edgar Treischl"
+date: 2021-07-10
+diagram: FALSE
+output:
+  html_document:
+    highlight: kate
+    
+links:
+- icon: github
+  icon_pack: fab
+  name: GitHub
+  url: https://edgar-treischl.github.io/edgar/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(exams)
+```
+
+```{r klippy, echo=FALSE, include=TRUE}
+klippy::klippy(position = c('top', 'right'), 
+               tooltip_message = 'Click to copy', 
+               tooltip_success = 'Yeah!',
+               color = 'darkblue')
+```
+
+
+
+Pie charts are awful, and the Pie charts vs. Pacman underlines this point:
+
+![Pie Chart](pacman.png)
+
+
