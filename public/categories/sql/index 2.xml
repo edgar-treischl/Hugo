@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Dr. Edgar Treischl</title>
+    <link>/categories/sql/</link>
+    <description>Recent content in SQL on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning SQL the Badass Way III</title>
+      <link>/blog/sql3/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql3/</guid>
+      <description>Do you really want to &amp;ldquo;learn SQL the badass way&amp;rdquo;? I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+    </item>
+    
+    <item>
+      <title>Learning SQL the Badass Way II</title>
+      <link>/blog/sql2/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql2/</guid>
+      <description>Some vocabulary This is the second blog post from &amp;ldquo;Learn SQL the badass way&amp;rdquo;. I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
+    </item>
+    
+    <item>
+      <title>Learning SQL the Badass Way (1)</title>
+      <link>/blog/sql1/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql1/</guid>
+      <description>The blog learning SQL the badass way shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account.</description>
+    </item>
+    
+  </channel>
+</rss>

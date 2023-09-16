@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Dr. Edgar Treischl</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practice R</title>
+      <link>/publication/practicer/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/practicer/</guid>
+      <description>Many students learn to analyze data using commercial packages, even though there is an open-source software with cutting-edge possibilities: R, a programming language with countless cool features for applied empirical research. Practice R introduces R to social science students, inspiring them to consider R as an excellent choice. In a non-technical pragmatic way, this book covers all typical steps of applied empirical research. Learn how to prepare, analyze, and visualize data in R. Discover how to collect data, generate reports, or automate error-prone tasks&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>The Past, Present and Future of Factorial Survey Experiments</title>
+      <link>/publication/treischl_wolbring_2021/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/treischl_wolbring_2021/</guid>
+      <description>Factorial survey experiments (FSEs) are increasingly used in the social sciences. This paper provides a review about the use of FSEs and aims to answer three research questions. (1) How has this specific research field developed over time? (2) Which methodological advances have been made in FSE research and to what degree are they applied in empirical studies? (3) Which questions remain unresolved and should be addressed in future research? &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Data-driven Student Advisory and Potential Direct Discrimination</title>
+      <link>/publication/sch%C3%B6mer_etal_2021/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/sch%C3%B6mer_etal_2021/</guid>
+      <description>The use of machine learning found its way into the field of educational research and address the necessity of data-driven student advisory. Notwithstanding the plethora of current research that predicts and quantifies aspects of students&amp;rsquo; academic success in various situations during a student&amp;rsquo;s course of study, most studies focus on the technical aspects and overlook potential of direct discrimination. In addressing this gap, &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Give a Little, Take a Little?</title>
+      <link>/publication/2021_treischl_etal/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2021_treischl_etal/</guid>
+      <description>Given its ability to handle a large amount of data, artificial intelligence (AI) has the potential to improve data-driven decisions under various situations. The present research identifies the necessary conditions for the implementation of an AI-based advisory system (AS) in higher education. Using a factorial survey design, we examine experimentally varied features of an AI-based AS to explore students’ willingness to use it and students’ willingness to share their data as a core challenge for successful implementation &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Wirkungsevaluation</title>
+      <link>/publication/wirkungsevaluation/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/wirkungsevaluation/</guid>
+      <description>Evaluationen werden häufig durchgeführt, um die kausalen Wirkungen einer Maßnahme zu identifizieren. Das Lehrbuch führt in die entsprechenden theoretischen und methodischen Grundlagen der Wirkungsevaluation ein und illustriert diese anhand ausgewählter Beispiele. Ziel des Buches ist es dabei, einen praktischen Bezug zum Ablauf einer Evaluation &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Selection Effects in Students’ Evaluation of Teaching</title>
+      <link>/publication/diss/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/diss/</guid>
+      <description>Student evaluation of teaching (SET) is an empirically well-established instrument for quality assurance in higher education. Most research shows that SET is a reliable and valid instrument to measure teaching quality from students&amp;rsquo; perception and in accordance with Seldins statement one may come to the conclusion, that: &amp;rsquo;the opinions of those who eat the dinner should be considered if we want to know how it tastes&amp;rsquo; (Seldin 1993: 40). However, in many instances students can select courses they want to attend before the course starts, and even in mandatory courses students can often decide how regularly they attend. &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Studentische Lehrveranstaltungsevaluation</title>
+      <link>/publication/treischl_wolbring_2017_handbuch/</link>
+      <pubDate>Sat, 09 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/treischl_wolbring_2017_handbuch/</guid>
+      <description>Die studentische Lehrveranstaltungsevaluation (LVE) ist das am weitesten verbreitete Instrument zur Erfassung der Lehrqualität aus studentischer Perspektive. Vor dem Hintergrund des flächendeckenden Einsatzes des Instruments bei gleichzeitig anhaltend starker und weit verbreiteter Kritik gegenüber der studentischen LVE soll der vorliegende Beitrag daher einen  &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>The Causal Effect of Survey Mode on Students’ Evaluations of Teaching</title>
+      <link>/publication/treischl_wolbring_2017/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/treischl_wolbring_2017/</guid>
+      <description>In recent years many universities switched from paper- to online-based student evaluation of teaching (SET) without knowing the consequences for data quality. Based on a series of three consecutive field experiments — a split-half design, twin courses, and pre–post-measurements—this paper examines the effects of survey mode on SET. First, all three studies reveal &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Selection Bias in Students&#39; Evaluation of Teaching</title>
+      <link>/publication/wolbring_treischl_2016/</link>
+      <pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/wolbring_treischl_2016/</guid>
+      <description>Systematic sampling error due to self-selection is a common topic in methodological research and a key challenge for every empirical study. Since selection bias is often not sufficiently considered as a potential flaw in research on and evaluations in higher education, the aim of this paper is to raise awareness for the topic using the case of students’ evaluations of teaching (SET). First, we &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
