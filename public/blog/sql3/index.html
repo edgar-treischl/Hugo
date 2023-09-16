@@ -121,7 +121,7 @@
 <p>In this session we learn how to use string patterns and ranges to search data. We will learn how to sort and group data to display result. Moreover, we practice composing nested queries and execute select statements to access data from multiple tables. For this reason I created a simple table that contains some attributes (y, z, id) about countries:</p>
 <pre tabindex="0"><code>SELECT * FROM df ;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 1: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-1"></span>Table 1: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -169,7 +169,7 @@
 <p>We can use strings and the WHERE clause to search for specific observations. For instance,  <code>WHERE countryname LIKE 'A%'</code> means that we search for country name column that start with the corresponding string. And we can use <code>%</code> as a wildcard character:</p>
 <pre tabindex="0"><code>SELECT * FROM df WHERE country LIKE &#39;A%&#39;;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 2: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-2"></span>Table 2: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -193,7 +193,7 @@
 <pre tabindex="0"><code>select * from mtcars
 where (hp BETWEEN 100 and 200) and AM = 1 ;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 3: 5 records</p>
+<p>Table: <span id="tab:unnamed-chunk-3"></span>Table 3: 5 records</p>
 <table>
 <thead>
 <tr>
@@ -282,7 +282,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 <p>Another option gives us the <code>IN</code> operator. We can select columns by providing a list and the <code>IN</code> operator. As the next example shows, we select only those observations that match the provided list of the <code>IN</code> operator:</p>
 <pre tabindex="0"><code>SELECT * FROM df WHERE country IN (&#39;Brazil&#39;);
 </code></pre><div class="knitsql-table">
-<p>Table: Table 4: 2 records</p>
+<p>Table: <span id="tab:unnamed-chunk-4"></span>Table 4: 2 records</p>
 <table>
 <thead>
 <tr>
@@ -321,7 +321,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 <p>Sometimes we need to sort the entries alphabetically and we can do that with the <code>ORDER BY</code> clause. For instance, <code>ORDER BY country</code>:</p>
 <pre tabindex="0"><code>SELECT * FROM df ORDER BY country;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 5: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-5"></span>Table 5: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -364,7 +364,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 </ul>
 <pre tabindex="0"><code>SELECT * FROM df ORDER BY country DESC;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 6: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-6"></span>Table 6: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -405,7 +405,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 <p>Sometimes we have several observations per unit or any kind of structural order, which is why we may want to order a specific variable. We can sort the data by providing the number of the column we want to use a sort. As the next example shows, we can use y (or 2) to sort the data:</p>
 <pre tabindex="0"><code>SELECT * FROM df ORDER BY y;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 7: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-7"></span>Table 7: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -456,7 +456,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 <p>To work with data, we have to get rid of duplicates and often it is much more easier if we restrict result set (data frame). To exclude duplicates we can use the <code>distinct()</code> command, which returns only distinct countries in our example:</p>
 <pre tabindex="0"><code>SELECT distinct(country) FROM df ;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 8: 3 records</p>
+<p>Table: <span id="tab:unnamed-chunk-8"></span>Table 8: 3 records</p>
 <table>
 <thead>
 <tr>
@@ -480,7 +480,7 @@ where (hp BETWEEN 100 and 200) and AM = 1 ;
 In such a case we can count the county column and use the <code>group by</code> clause:</p>
 <pre tabindex="0"><code>SELECT country, count (country) from df group by country;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 9: 3 records</p>
+<p>Table: <span id="tab:unnamed-chunk-9"></span>Table 9: 3 records</p>
 <table>
 <thead>
 <tr>
@@ -507,7 +507,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>As the last output showed, the count functions literally counts, but SQL does not give it a name, it simply displays what it does. We can change this ugly behaviour by providing a variable name and tell SQL how the column should be listed.</p>
 <pre tabindex="0"><code>SELECT country, count (country) AS Count_Variable from df group by country;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 10: 3 records</p>
+<p>Table: <span id="tab:unnamed-chunk-10"></span>Table 10: 3 records</p>
 <table>
 <thead>
 <tr>
@@ -534,7 +534,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Certainly, counting is not the only function. We can estimate the mean average with <code>AVG()</code>. And now the average, little SQL monkey!</p>
 <pre tabindex="0"><code>SELECT country, AVG(z) as Mean from df group by country;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 11: 3 records</p>
+<p>Table: <span id="tab:unnamed-chunk-11"></span>Table 11: 3 records</p>
 <table>
 <thead>
 <tr>
@@ -561,7 +561,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>We can set a further conditions with a grouped by clause and add the <code>HAVING</code> option. As the next output shows, the <code>group by country HAVING count (country) &gt; 1</code> returns only countries with more than one observation counted:</p>
 <pre tabindex="0"><code>SELECT country, count (country) AS Count from df group by country having count (country) &gt; 1;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 12: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-12"></span>Table 12: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -599,7 +599,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>We saw in the last section that we can aggregate (count, avg) data and use column functions. Most of the basic statistics functions (sum, avg, min, max) are available and we can specify further conditions, for instance, if we want to summarize groups:</p>
 <pre tabindex="0"><code>select sum(mpg) as sum_mpg from mtcars where hp &gt; 100
 </code></pre><div class="knitsql-table">
-<p>Table: Table 13: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-13"></span>Table 13: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -616,7 +616,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Or we may use the scalar function and round to the nearest integer:</p>
 <pre tabindex="0"><code>select round(drat, 1) as round_drat from mtcars
 </code></pre><div class="knitsql-table">
-<p>Table: Table 14: Displaying records 1 - 10</p>
+<p>Table: <span id="tab:unnamed-chunk-14"></span>Table 14: Displaying records 1 - 10</p>
 <table>
 <thead>
 <tr>
@@ -660,7 +660,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>In SQL, there is a class of scalar functions. For instance, we can calculate the length of a string:</p>
 <pre tabindex="0"><code>select length(country) from df
 </code></pre><div class="knitsql-table">
-<p>Table: Table 15: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-15"></span>Table 15: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -686,7 +686,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Depending the SQL database you use, in db2 you can use the upper (UCASE) and lower case (LCASE) function for strings.</p>
 <pre tabindex="0"><code>select upper(country) from df
 </code></pre><div class="knitsql-table">
-<p>Table: Table 16: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-16"></span>Table 16: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -747,7 +747,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Sub-queries or sub selects are like regular queries but placed within parentheses and nested inside another query. This allows you to form more powerful queries than would have been otherwise possible. An example:</p>
 <pre tabindex="0"><code>select avg(mpg) from mtcars
 </code></pre><div class="knitsql-table">
-<p>Table: Table 17: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-18"></span>Table 17: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -767,7 +767,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <pre tabindex="0"><code>select * from mtcars where mpg &gt;
   (select avg(mpg) from mtcars);
 </code></pre><div class="knitsql-table">
-<p>Table: Table 18: Displaying records 1 - 10</p>
+<p>Table: <span id="tab:unnamed-chunk-20"></span>Table 18: Displaying records 1 - 10</p>
 <table>
 <thead>
 <tr>
@@ -921,7 +921,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Colum expressions help to set sub queries as a list of columns. Say we select variable Z:</p>
 <pre tabindex="0"><code>select country, z from df
 </code></pre><div class="knitsql-table">
-<p>Table: Table 19: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-21"></span>Table 19: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -952,7 +952,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>And in the next step we add the average of all countries:</p>
 <pre tabindex="0"><code>select country, z, avg(z) as avg_Z from df
 </code></pre><div class="knitsql-table">
-<p>Table: Table 20: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-22"></span>Table 20: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -973,7 +973,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>This is obviously wrong. We cannot calculate on micro and macro level the same time, but we could use a sub-query (also called table expressions) to achieve it:</p>
 <pre tabindex="0"><code>select country, z, (select avg(z) from df group by country) as avg_Z from df
 </code></pre><div class="knitsql-table">
-<p>Table: Table 21: 4 records</p>
+<p>Table: <span id="tab:unnamed-chunk-23"></span>Table 21: 4 records</p>
 <table>
 <thead>
 <tr>
@@ -1009,7 +1009,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Sub-queries can also be applied in the from clause. They are called derived tables or table expressions, because the outer query uses the results of the sub-query as a data source</p>
 <pre tabindex="0"><code>select * from (select hp, vs from mtcars);
 </code></pre><div class="knitsql-table">
-<p>Table: Table 22: Displaying records 1 - 10</p>
+<p>Table: <span id="tab:unnamed-chunk-24"></span>Table 22: Displaying records 1 - 10</p>
 <table>
 <thead>
 <tr>
@@ -1074,7 +1074,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>There are several ways to access multiple tables in the same query. Namely, using sub-queries, implicit join, and join operators, such as <code>INNER JOIN</code> and <code>OUTER JOIN</code>. For instance:</p>
 <pre tabindex="0"><code>select * from df2;
 </code></pre><div class="knitsql-table">
-<p>Table: Table 23: 2 records</p>
+<p>Table: <span id="tab:unnamed-chunk-25"></span>Table 23: 2 records</p>
 <table>
 <thead>
 <tr>
@@ -1102,7 +1102,7 @@ In such a case we can count the county column and use the <code>group by</code> 
   where country in
   (select country from df2)
 </code></pre><div class="knitsql-table">
-<p>Table: Table 24: 2 records</p>
+<p>Table: <span id="tab:unnamed-chunk-26"></span>Table 24: 2 records</p>
 <table>
 <thead>
 <tr>
@@ -1133,7 +1133,7 @@ In such a case we can count the county column and use the <code>group by</code> 
   where country in
   (select country from df2 where valid = 1)
 </code></pre><div class="knitsql-table">
-<p>Table: Table 25: 1 records</p>
+<p>Table: <span id="tab:unnamed-chunk-27"></span>Table 25: 1 records</p>
 <table>
 <thead>
 <tr>
@@ -1156,7 +1156,7 @@ In such a case we can count the county column and use the <code>group by</code> 
 <p>Implicit joins implies that we can access multiple tables by specifying them in the <code>FROM</code> clause of the query. This leads to a CROSS JOIN (also known as Cartesian Join).</p>
 <pre tabindex="0"><code>select * from df, df2
 </code></pre><div class="knitsql-table">
-<p>Table: Table 26: 8 records</p>
+<p>Table: <span id="tab:unnamed-chunk-28"></span>Table 26: 8 records</p>
 <table>
 <thead>
 <tr>
@@ -1373,23 +1373,8 @@ Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xml
     
       
     
-    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/project/edgar/" title="robot" >
-      <i class="fa fa-robot fa-lg fa-fw"></i>
-    </a>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/media/CV_Treischl.pdf" title="file-pdf" >
-      <i class="fas fa-file-pdf fa-lg fa-fw"></i>
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com/citations?user=hOhulnUAAAAJ&amp;hl=en" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
     </a>
   
     
@@ -1410,14 +1395,16 @@ Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xml
     
     
     
+      
+    
     
     
     
     
       
     
-    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com/citations?user=hOhulnUAAAAJ&amp;hl=en" title="google-scholar" target="_blank" rel="me noopener">
-      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/media/CV_Treischl.pdf" title="file-pdf" >
+      <i class="fas fa-file-pdf fa-lg fa-fw"></i>
     </a>
   
 </div>

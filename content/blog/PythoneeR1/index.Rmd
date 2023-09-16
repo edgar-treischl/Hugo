@@ -4,6 +4,9 @@ author: "Edgar Treischl"
 date: 2021-03-21
 diagram: FALSE
 categories: ["Python"]
+outout:
+  html_document:
+    highlight: kate
 ---
 
 

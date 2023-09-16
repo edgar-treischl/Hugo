@@ -33,7 +33,7 @@ SELECT * FROM mtcars;
 <div class="knitsql-table">
 
 
-Table: Table 1: Displaying records 1 - 10
+Table: <span id="tab:unnamed-chunk-1"></span>Table 1: Displaying records 1 - 10
 
 |  mpg| cyl|  disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |----:|---:|-----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
@@ -61,7 +61,7 @@ SELECT mpg, disp FROM mtcars LIMIT 5;
 <div class="knitsql-table">
 
 
-Table: Table 2: 5 records
+Table: <span id="tab:unnamed-chunk-2"></span>Table 2: 5 records
 
 |  mpg| disp|
 |----:|----:|
@@ -90,7 +90,7 @@ SELECT * FROM mtcars WHERE am = 0 LIMIT 5;
 <div class="knitsql-table">
 
 
-Table: Table 3: 5 records
+Table: <span id="tab:unnamed-chunk-3"></span>Table 3: 5 records
 
 |  mpg| cyl|  disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
 |----:|---:|-----:|---:|----:|-----:|-----:|--:|--:|----:|----:|
@@ -113,7 +113,7 @@ SELECT * FROM iris WHERE Species = "virginica"  LIMIT 5;
 <div class="knitsql-table">
 
 
-Table: Table 4: 5 records
+Table: <span id="tab:unnamed-chunk-4"></span>Table 4: 5 records
 
 | Sepal.Length| Sepal.Width| Petal.Length| Petal.Width|Species   |
 |------------:|-----------:|------------:|-----------:|:---------|
@@ -138,7 +138,7 @@ SELECT COUNT(*) FROM mtcars;
 <div class="knitsql-table">
 
 
-Table: Table 5: 1 records
+Table: <span id="tab:unnamed-chunk-5"></span>Table 5: 1 records
 
 | COUNT(*)|
 |--------:|
@@ -157,7 +157,7 @@ SELECT COUNT(am) FROM mtcars WHERE am != 0;
 <div class="knitsql-table">
 
 
-Table: Table 6: 1 records
+Table: <span id="tab:unnamed-chunk-6"></span>Table 6: 1 records
 
 | COUNT(am)|
 |---------:|
@@ -178,7 +178,7 @@ SELECT DISTINCT Species FROM iris
 <div class="knitsql-table">
 
 
-Table: Table 7: 3 records
+Table: <span id="tab:unnamed-chunk-7"></span>Table 7: 3 records
 
 |Species    |
 |:----------|
@@ -199,7 +199,7 @@ SELECT COUNT (DISTINCT Species) FROM iris
 <div class="knitsql-table">
 
 
-Table: Table 8: 1 records
+Table: <span id="tab:unnamed-chunk-8"></span>Table 8: 1 records
 
 | COUNT (DISTINCT Species)|
 |------------------------:|
@@ -253,7 +253,7 @@ SELECT * FROM df;
 <div class="knitsql-table">
 
 
-Table: Table 9: 3 records
+Table: <span id="tab:unnamed-chunk-11"></span>Table 9: 3 records
 
 |x  |  y|   z|
 |:--|--:|---:|
@@ -284,7 +284,7 @@ SELECT * FROM df;
 <div class="knitsql-table">
 
 
-Table: Table 10: 3 records
+Table: <span id="tab:unnamed-chunk-13"></span>Table 10: 3 records
 
 |x  |  y|    z|
 |:--|--:|----:|
@@ -314,7 +314,7 @@ SELECT * FROM df;
 <div class="knitsql-table">
 
 
-Table: Table 11: 2 records
+Table: <span id="tab:unnamed-chunk-15"></span>Table 11: 2 records
 
 |x  |  y|   z|
 |:--|--:|---:|

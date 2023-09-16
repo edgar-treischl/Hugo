@@ -5,10 +5,15 @@ summary: "Visualizations to illustrate concepts."
 
 
 links:
+- icon: image
+  icon_pack: fas
+  name: Graph
+  url: https://edgar-treischl.github.io/edgar/articles/web_only/illustrations/illustrations.html
+  
 - icon: github
   icon_pack: fab
-  name: GitHub
-  url: https://edgar-treischl.github.io/edgar/
+  name: Source Code
+  url: https://github.com/edgar-treischl/edgar/tree/master/inst/graphs
 
 title: Illustrations
 ---

@@ -10,7 +10,6 @@ output:
 
 
 
-## Create, scan, and correct exams with R
 
 As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don't know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R `exams` package for single or multiple choice exams, even if you are not a heavy R user. The R `exams` package provides some feature to automate the entire process, from generating the exam up to assigning grades. This blog shows how the package works to encourage people with little R experience to use the `exams` package.
 

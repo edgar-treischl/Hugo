@@ -132,15 +132,6 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
-      <title>Humor</title>
-      <link>/dataviz/humor/</link>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/humor/</guid>
-      <description>Visualizations for a twinkle in the eye.</description>
-    </item>
-    
-    <item>
       <title>Illustrations</title>
       <link>/dataviz/illustrations/</link>
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
@@ -182,7 +173,17 @@ My content section is: collection My layout is: single-series part 2! does this 
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/examr/</guid>
-      <description>Create, scan, and correct exams with R As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don&amp;rsquo;t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user.</description>
+      <description>As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don&amp;rsquo;t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user. The R exams package provides some feature to automate the entire process, from generating the exam up to assigning grades.</description>
+    </item>
+    
+    <item>
+      <title>Humor</title>
+      <link>/dataviz/humor/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/dataviz/humor/</guid>
+      <description> Pie charts are awful, and the Pie charts vs. Pacman underlines this point:
+Pie Chart </description>
     </item>
     
     <item>
