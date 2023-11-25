@@ -29,13 +29,19 @@
     <loc>/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2023-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/mastersql/</loc>
+    <lastmod>2023-11-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/copycat/</loc>
-    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/</loc>
@@ -74,15 +80,6 @@
     <loc>/dataviz/practicer/</loc>
     <lastmod>2021-10-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/sql3/</loc>
-    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/sql/</loc>
-    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/examr/</loc>
     <lastmod>2021-07-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -91,9 +88,6 @@
   </url><url>
     <loc>/project/ebf/</loc>
     <lastmod>2021-06-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/sql2/</loc>
-    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/pythoneer1/</loc>
     <lastmod>2021-03-21T00:00:00+00:00</lastmod>
@@ -128,9 +122,6 @@
     <loc>/publication/wirkungsevaluation/</loc>
     <lastmod>2020-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/sql1/</loc>
-    <lastmod>2020-03-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/project/tutzing/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -148,9 +139,6 @@
   </url><url>
     <loc>/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
-  </url><url>
-    <loc>/blog/ggplot_for_starters/</loc>
-    <lastmod>2018-01-12T21:13:14-05:00</lastmod>
   </url><url>
     <loc>/publication/treischl_wolbring_2017_handbuch/</loc>
     <lastmod>2017-09-09T00:00:00+00:00</lastmod>

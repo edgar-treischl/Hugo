@@ -6,7 +6,7 @@
     <description>Recent content in Edgar J. Treischl on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Netlify</title>
       <link>/collection/day02/01-netlify/</link>
@@ -87,6 +87,15 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
+      <title>Master SQL with R</title>
+      <link>/blog/mastersql/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/mastersql/</guid>
+      <description>This article briefly introduces R packages to master SQL. I will not introduce SQL nor all kind of R packages that are helpful to work with SQL; instead I will focus on packages that support us to learn SQL. First, I show that there is no need to install software, create databases, or get familiar with cloud applications in the beginning. You can focus on and run SQL queries from R with no further ado.</description>
+    </item>
+    
+    <item>
       <title>CopyCat</title>
       <link>/project/copycat/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
@@ -159,21 +168,12 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
-      <title>Learning SQL the Badass Way III</title>
-      <link>/blog/sql3/</link>
-      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/sql3/</guid>
-      <description>Do you really want to &amp;ldquo;learn SQL the badass way&amp;rdquo;? I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
-    </item>
-    
-    <item>
       <title>Create, scan, and correct exams with R</title>
       <link>/blog/examr/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/examr/</guid>
-      <description>As instructors, we are creating exams each semester and often we use multiple-choice questions to assess the knowledge of our students. I don&amp;rsquo;t know how many times I have manually corrected an exam which is why this blog gives a short introduction and shows why you should use the R exams package for single or multiple choice exams, even if you are not a heavy R user. The R exams package provides some feature to automate the entire process, from generating the exam up to assigning grades.</description>
+      <description>R can be used to create, scan, and correct student exams. This blog introduces the R exams package and shows how the approach works based on demo exam files that come with the package. I demonstrate how R scans exam images, extract answers from single or multiple choice questions, and correct them automatically. Next, I underline typical next steps that are related to this kind of work and how they are implemented in R (e.</description>
     </item>
     
     <item>
@@ -193,15 +193,6 @@ Pie Chart </description>
       
       <guid>/project/ebf/</guid>
       <description>I held my lecture educational empirical research several times online, inspect &amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Learning SQL the Badass Way II</title>
-      <link>/blog/sql2/</link>
-      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/sql2/</guid>
-      <description>Some vocabulary This is the second blog post from &amp;ldquo;Learn SQL the badass way&amp;rdquo;. I outlined the scope of the blog in the first blog entry where I explained why I set the scope to R users and people with some programming languages. You may not find what you are looking for if you are not familiar with R or if you do not have any other experience to work with data, because I focus on the data management part in this blog.</description>
     </item>
     
     <item>
@@ -286,15 +277,6 @@ Pie Chart </description>
     </item>
     
     <item>
-      <title>Learning SQL the Badass Way (1)</title>
-      <link>/blog/sql1/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/sql1/</guid>
-      <description>The blog learning SQL the badass way shows you the basic commands to manage tables and data with SQL. I assume that you are familiar with R (or other programming languages) to manipulate data. For this reason, this page only summarizes main idiosyncrasies of SQL, not concepts that you probably know from any other programming experience. I made the experience that learning new things always takes a lot of time and often I have the impression that many courses are designed without taking your personal experience into account.</description>
-    </item>
-    
-    <item>
       <title>Workshops empirische Bildungsforschung</title>
       <link>/project/tutzing/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
@@ -346,16 +328,6 @@ Formspree requires a (free) account and new form to be set up. The link is made 
 (20px) 1rem
 (16px) .875rem
 (14px) Type Samples Head&amp;shy;line Sub&amp;shy;head&amp;shy;line Level 1 Heading One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
-    </item>
-    
-    <item>
-      <title>GGplot for Starters</title>
-      <link>/blog/ggplot_for_starters/</link>
-      <pubDate>Fri, 12 Jan 2018 21:13:14 -0500</pubDate>
-      
-      <guid>/blog/ggplot_for_starters/</guid>
-      <description>I believe learning GGPlot is a good start for everyone who is not familiar with R, but who has at least some coding experience from other statistic programs. For this reason, I truly believe that learning GGPlot is smooth way to learn R ;)
-GGPlot is a powerful library that comes with many different applications to visualize data. It starts with very simple things like bar charts, box plots and line charts.</description>
     </item>
     
     <item>
