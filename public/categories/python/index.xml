@@ -6,16 +6,7 @@
     <description>Recent content in Python on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>EdgarGPT</title>
-      <link>/project/edgar/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/project/edgar/</guid>
-      <description>Ask EdgarGPT a question. The AI chat bot is trained to know facts about me based on this website, my CV, and other project materials.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The PythoneeR: Intro</title>
       <link>/blog/pythoneer1/</link>

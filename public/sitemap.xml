@@ -50,16 +50,10 @@
     <loc>/categories/r/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/edgar/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/publication/practicer/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/python/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/treischl_wolbring_2021/</loc>
@@ -88,6 +82,9 @@
   </url><url>
     <loc>/project/ebf/</loc>
     <lastmod>2021-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/python/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/pythoneer1/</loc>
     <lastmod>2021-03-21T00:00:00+00:00</lastmod>

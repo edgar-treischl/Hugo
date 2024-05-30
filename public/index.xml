@@ -105,15 +105,6 @@ My content section is: collection My layout is: single-series part 2! does this 
     </item>
     
     <item>
-      <title>EdgarGPT</title>
-      <link>/project/edgar/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/project/edgar/</guid>
-      <description>Ask EdgarGPT a question. The AI chat bot is trained to know facts about me based on this website, my CV, and other project materials.</description>
-    </item>
-    
-    <item>
       <title>Practice R</title>
       <link>/publication/practicer/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
