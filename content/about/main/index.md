@@ -7,6 +7,9 @@ use_featured: false # if false, use most recent by date
 number_categories: 5 # set to zero to exclude
 show_intro: true
 intro: |
+  
+  I work at the ISB (Staatsinstitut für Schulqualität und Bildungsforschung München) as a data scientist.
+  
   Until recently I worked as a postdoctoral research assistant at the Chair of Empirical Economic Sociology, at the University Erlangen-Nürnberg. I studied sociology at the University of Munich, where I graduated in 2013 with a degree in Sociology, focusing on quantitative methods and educational research. I attained my PhD at the University of Mannheim as a part of the Graduate School of Economic and Social Sciences (GESS). 
   
   Between 2013 and 2015 I worked at the University of Munich as a research assistant at Norman Braun’s chair of quantitative social research (now Katrin Auspurg), where I was also responsible for the quality management and teaching evaluation as a member of the dean of studies Josef Brüderl.
