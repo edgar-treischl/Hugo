@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Dr. Edgar Treischl</title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gist</title>
+      <link>/project/gist/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/project/gist/</guid>
+      <description>The gist package provides a set of functions to work with GitHub Gist &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>CopyCat</title>
+      <link>/project/copycat/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/project/copycat/</guid>
+      <description>CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression App</title>
+      <link>/project/olsapp/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/olsapp/</guid>
+      <description>The app shows user with little statistical background the main idea of a linear regression analysis. User can pick &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Logistic regression app</title>
+      <link>/project/logitapp/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/logitapp/</guid>
+      <description>The shiny app introduces the basics of a logistic regression and examine who survived the Titanic accident &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Power App</title>
+      <link>/project/powerapp/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/project/powerapp/</guid>
+      <description>This app introduces power analysis and outlines how sample and effect size are related. Run a &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Practice R</title>
+      <link>/project/practicer/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/practicer/</guid>
+      <description>The Practice R package is the corresponding R package for the book. It contains tutorials, learning materials &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

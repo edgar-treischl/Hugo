@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Dr. Edgar Treischl</title>
+    <link>/categories/python/</link>
+    <description>Recent content in Python on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The PythoneeR: Intro</title>
+      <link>/blog/pythoneer1/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/pythoneer1/</guid>
+      <description>I tried to learn Python several times. Once I had a very peculiar class in which we should learn Python for processing natural language. Well, it was more about text mining than applying Python. I tried to learn Python with the help of several books which introduced and ins and out of Python. Before I started to learn Python, I fluently spoke several other statistics software like R, Stata, and please forgive me, my personal journey started with SPSS.</description>
+    </item>
+    
+  </channel>
+</rss>
