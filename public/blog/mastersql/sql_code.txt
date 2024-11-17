@@ -1,4 +1,0 @@
-```{sql connection=con}
---Example SQL Code
-SELECT AVG(mpg) FROM mtcars;
-```
