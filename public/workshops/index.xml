@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshops on Dr. Edgar Treischl</title>
+    <link>/workshops/</link>
+    <description>Recent content in Workshops on Dr. Edgar Treischl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CopyCat</title>
+      <link>/workshops/test/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/test/</guid>
+      <description>CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 ---
-date: "2019-11-01T00:00:00Z"
+date: "2021-11-15T00:00:00Z"
 
 summary: "Dank der Einladung der Akademie für Politische Bildung (Dillingen) durft ich mehrfach die flankierende Lehrgangssequenz ..."
 

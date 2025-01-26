@@ -33,7 +33,7 @@ enableEmoji = true
   description = ""
   favicon = "/img/favicon.ico"
   logo = "/img/icon.png"
-  mainSections = ["publication"]
+  mainSections = ["project"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
@@ -141,6 +141,11 @@ enableEmoji = true
     title = "Contact"
     url = "/contact/"
     weight = 6
+  [[menu.header]]
+    name = "Workshops"
+    title = "Workshops"
+    url = "/workshops/"
+    weight = 7
     
   # Configure footer  
   [[menu.footer]]

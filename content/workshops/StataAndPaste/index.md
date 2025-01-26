@@ -1,5 +1,5 @@
 ---
-date: "2020-11-01T00:00:00Z"
+date: "2019-11-01T00:00:00Z"
 
 
 summary: "Learn Stata with the help of Stata And Paste. The website (book) provides code to run minimal examples with implemented data ..."

@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>CopyCat</title>
+      <link>/workshops/test/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/test/</guid>
+      <description>CopyCat is a small R package to copy, paste, and manage code snippets. CopyCat comes with &amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Practice R</title>
       <link>/publication/practicer/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
