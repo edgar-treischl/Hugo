@@ -132,20 +132,15 @@ enableEmoji = true
     url = "/blog/"
     weight = 4
   [[menu.header]]
-    name = "Visualizations"
-    title = "Visualizations"
-    url = "/Dataviz/"
+    name = "Workshops"
+    title = "Workshops"
+    url = "/workshops/"
     weight = 5
   [[menu.header]]
     name = "Contact"
     title = "Contact"
     url = "/contact/"
     weight = 6
-  [[menu.header]]
-    name = "Workshops"
-    title = "Workshops"
-    url = "/workshops/"
-    weight = 7
     
   # Configure footer  
   [[menu.footer]]

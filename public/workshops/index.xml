@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Workshops and Talks on Dr. Edgar Treischl</title>
+    <title>Slides, Talks, and Workshops on Dr. Edgar Treischl</title>
     <link>/workshops/</link>
-    <description>Recent content in Workshops and Talks on Dr. Edgar Treischl</description>
+    <description>Recent content in Slides, Talks, and Workshops on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Put R in Production</title>
+      <link>/workshops/r_in_production/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/r_in_production/</guid>
+      <description>Whether you&amp;rsquo;re a beginner looking for guidance or simply in need of teaching material, my slides provide a step-by-step guide to &amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Git(Hub)</title>
       <link>/workshops/github_intro/</link>
@@ -23,6 +32,15 @@
       
       <guid>/workshops/tutzing/</guid>
       <description>Dank der Einladung der Akademie für Politische Bildung (Dillingen) durft ich mehrfach die flankierende Lehrgangssequenz &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Empirical educational research</title>
+      <link>/workshops/ebf/</link>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/ebf/</guid>
+      <description>I held my lecture educational empirical research several times online, inspect &amp;hellip;</description>
     </item>
     
     <item>

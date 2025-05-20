@@ -6,7 +6,16 @@
     <description>Recent content in R on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Put R in Production</title>
+      <link>/workshops/r_in_production/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/r_in_production/</guid>
+      <description>Whether you&amp;rsquo;re a beginner looking for guidance or simply in need of teaching material, my slides provide a step-by-step guide to &amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Git(Hub)</title>
       <link>/workshops/github_intro/</link>

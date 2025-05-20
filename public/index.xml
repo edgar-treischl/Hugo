@@ -6,7 +6,16 @@
     <description>Recent content in Edgar J. Treischl on Dr. Edgar Treischl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Put R in Production</title>
+      <link>/workshops/r_in_production/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/workshops/r_in_production/</guid>
+      <description>Whether you&amp;rsquo;re a beginner looking for guidance or simply in need of teaching material, my slides provide a step-by-step guide to &amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Git(Hub)</title>
       <link>/workshops/github_intro/</link>
@@ -71,42 +80,6 @@
     </item>
     
     <item>
-      <title>Gapminder bubble chart</title>
-      <link>/dataviz/gapminder/</link>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/gapminder/</guid>
-      <description>A remake of the famous Gapminder bubble charts.</description>
-    </item>
-    
-    <item>
-      <title>Illustrations</title>
-      <link>/dataviz/illustrations/</link>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/illustrations/</guid>
-      <description>Visualizations to illustrate concepts.</description>
-    </item>
-    
-    <item>
-      <title>Streetmap</title>
-      <link>/dataviz/streetmaps/</link>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/streetmaps/</guid>
-      <description>A streetmap that visualizes Cologne.</description>
-    </item>
-    
-    <item>
-      <title>Visualizations for Practice R</title>
-      <link>/dataviz/practicer/</link>
-      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/practicer/</guid>
-      <description>Practice R includes a lot of graphs and illustrations &amp;hellip;</description>
-    </item>
-    
-    <item>
       <title>Create, scan, and correct exams with R</title>
       <link>/blog/examr/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
@@ -116,21 +89,11 @@
     </item>
     
     <item>
-      <title>Humor</title>
-      <link>/dataviz/humor/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/humor/</guid>
-      <description> Pie charts are awful, and the Pie charts vs. Pacman underlines this point:
-Pie Chart </description>
-    </item>
-    
-    <item>
       <title>Empirical educational research</title>
-      <link>/project/ebf/</link>
+      <link>/workshops/ebf/</link>
       <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/project/ebf/</guid>
+      <guid>/workshops/ebf/</guid>
       <description>I held my lecture educational empirical research several times online, inspect &amp;hellip;</description>
     </item>
     
@@ -306,15 +269,6 @@ Allison Horst 🐕 (awesome illustrations of campfires, seedlings, and evergreen
       
       <guid>/license/</guid>
       <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
-    </item>
-    
-    <item>
-      <title>Visualizations for Impact Evaluation</title>
-      <link>/dataviz/wirkungsevaluation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/dataviz/wirkungsevaluation/</guid>
-      <description>I created several visualizations for the book about &amp;hellip;</description>
     </item>
     
   </channel>

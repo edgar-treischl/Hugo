@@ -1,5 +1,5 @@
 ---
-title: Workshops and Talks
+title: Slides, Talks, and Workshops
 description: |
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
