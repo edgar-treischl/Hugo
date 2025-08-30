@@ -8,7 +8,7 @@ summary: "Dank der Einladung der Akademie für Politische Bildung (Dillingen) du
 links:
 - icon: link
   icon_pack: fas
-  name: Website
+  name: Slides
   url: https://edgar-treischl.github.io/APB_Tutzing/#1
 
 title: Workshops empirische Bildungsforschung 

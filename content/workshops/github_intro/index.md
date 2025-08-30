@@ -12,18 +12,18 @@ links:
 - icon: link
   icon_pack: fas
   name: Slides
-  url: https://edgar-treischl.github.io/Workshop_GitHubIntro/#1
+  url: https://edgar-treischl.github.io/slidesGit/
   
 - icon: github
   icon_pack: fab
   name: Source Code
-  url: https://github.com/edgar-treischl/Workshop_GitHubIntro
+  url: https://github.com/edgar-treischl/slidesGit
 
 categories: ["R", "Github"]
 ---
 
-<a href="https://edgar-treischl.github.io/Workshop_GitHubIntro/" target="_blank">
-  <img src="https://edgar-treischl.github.io/Workshop_GitHubIntro/images/preview.png" width="90%" style="display: block; margin: auto;" />
+<a href="https://edgar-treischl.github.io/slidesGit/" target="_blank">
+  <img src="https://raw.githubusercontent.com/edgar-treischl/slidesGit/refs/heads/main/images/preview.png" width="90%" style="display: block; margin: auto;" />
 </a>
 
 

@@ -5,7 +5,7 @@ summary: "The workshop introduces R for Stata Users and shows the first steps to
 links:
 - icon: link
   icon_pack: fas
-  name: Website
+  name: Slides
   url: http://rstudio.edgar-treischl.de/shiny/workshops/StataMeetsR/#/
 
 title: Stata meets R
